@@ -1,0 +1,336 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>ViMo Application Design</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow,noarchive" />
+  <meta name="googlebot" content="noodp,nosnippet,noarchive,noindex,nofollow" />
+  <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="static/css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" href="static/css/main.css" />
+  <link rel="apple-touch-icon" sizes="57x57" href="static/icons/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="static/icons/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="static/icons/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="static/icons/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="static/icons/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="static/icons/apple-touch-icon-76x76.png" />
+  <link rel="shortcut icon" href="static/icons/favicon.ico" />
+  <link rel="icon" type="image/png" href="static/icons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="static/icons/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="static/icons/favicon-32x32.png" sizes="32x32" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="msapplication-config" content="static/icons/browserconfig.xml" />
+</head>
+
+<body data-spy="scroll" data-target="#affix-nav">
+  <div id="navbar" class="hidden-sm hidden-xs">
+    <div id="affix-nav">
+      <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="0">
+        <li class="active"><a href="#login_screen" title="Go to page 'Login Screen'">Login Screen</a></li>
+        <li class="active"><a href="#home_screen" title="Go to page 'Home Screen'">Home Screen</a></li>
+        <li class="active"><a href="#side_menu_example" title="Go to page 'Side Menu Example'">Side Menu Example</a></li>
+        <li class="active"><a href="#share_modal_example" title="Go to page 'Share Modal Example'">Share Modal Example</a></li>
+        <li class="active"><a href="#favorites_screen" title="Go to page 'Favorites Screen'">Favorites Screen</a></li>
+        <li class="active"><a href="#favorites_menu_example" title="Go to page 'Favorites Menu Example'">Favorites Menu Example</a></li>
+        <li class="active"><a href="#shop_screen" title="Go to page 'Shop Screen'">Shop Screen</a></li>
+        <li class="active"><a href="#episodes_list_screen" title="Go to page 'Episodes List Screen'">Episodes List Screen</a></li>
+        <li class="active"><a href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'">Watch Episode Screen</a></li>
+        <li class="active"><a href="#item_details_screen" title="Go to page 'Item Details Screen'">Item Details Screen</a></li>
+        <li class="active"><a href="#shopping_cart_screen" title="Go to page 'Shopping Cart Screen'">Shopping Cart Screen</a></li>
+        <li class="active"><a href="#place_order_screen" title="Go to page 'Place Order Screen'">Place Order Screen</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-full" id="images">
+    <div class="image-header">
+      <h2 id="login_screen">Login Screen</h2>
+      <p>
+        <div>This screen comes up the first time a user downloads the app. They can login with Facebook, Google, or their ViMo account. They can create an account or continue to see the application without signing in.
+          <br />
+          <br />
+        </div>
+      </p>
+    </div><img width="400" height="800" src="pages/login_screen.png" usemap="#map_login_screen" class="img-responsive" />
+    <hr />
+    <map name="map_login_screen">
+      <area shape="rect" coords="242,565,293,591" href="#home_screen" title="Go to page 'Home Screen'" />
+      <area shape="rect" coords="96,385,305,432" href="#home_screen" title="Go to page 'Home Screen'" />
+      <area shape="rect" coords="127,287,276,309" href="#home_screen" title="Go to page 'Home Screen'" />
+      <area shape="rect" coords="103,631,287,652" href="#home_screen" title="Go to page 'Home Screen'" />
+      <area shape="rect" coords="153,520,283,544" href="#home_screen" title="Go to page 'Home Screen'" />
+      <area shape="rect" coords="99,512,303,552" href="#home_screen" title="Go to page 'Home Screen'" />
+      <area shape="rect" coords="96,447,306.01666259765625,497" href="#home_screen" title="Go to page 'Home Screen'" />
+      <area shape="rect" coords="98,567,230,591" href="#home_screen" title="Go to page 'Home Screen'" />
+    </map>
+    <div class="image-header">
+      <h2 id="home_screen">Home Screen</h2>
+      <p>
+        <div>The Home screen shows series a user may be interested in. If the user is logged in it would first show recommended series, otherwise it would show trending/new series first. Logged in users can favorite the series, which will then show up under
+          their favorites. If the user taps share, a modal menu will appear from the bottom with different social networking icons. If the user taps the three lines by "Home" a menu docked to the left will appear.
+          <br />
+        </div>
+      </p>
+    </div><img width="400" height="800" src="pages/home_screen.png" usemap="#map_home_screen" class="img-responsive" />
+    <hr />
+    <map name="map_home_screen">
+      <area shape="rect" coords="344,112,368,136" href="#shopping_cart_screen" title="Go to page 'Shopping Cart Screen'" />
+      <area shape="rect" coords="32,112,56,136" href="#side_menu_example" title="Go to page 'Side Menu Example'" />
+      <area shape="rect" coords="264,146,380,192" href="#shop_screen" title="Go to page 'Shop Screen'" />
+      <area shape="rect" coords="141,144,257,190" href="#favorites_screen" title="Go to page 'Favorites Screen'" />
+      <area shape="rect" coords="184,592,263,628" href="#favorites_screen" title="Go to page 'Favorites Screen'" />
+      <area shape="rect" coords="175,384,271,420" href="#favorites_screen" title="Go to page 'Favorites Screen'" />
+      <area shape="rect" coords="280,593,352,629" href="#share_modal_example" title="Go to page 'Share Modal Example'" />
+      <area shape="rect" coords="288,384,351,420" href="#share_modal_example" title="Go to page 'Share Modal Example'" />
+      <area shape="rect" coords="272,600,296,624" href="#share_modal_example" title="Go to page 'Share Modal Example'" />
+      <area shape="rect" coords="168,600,192,624" href="#favorites_screen" title="Go to page 'Favorites Screen'" />
+      <area shape="rect" coords="207,454,301,480" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="45,451,199,605" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="32,442,368,636" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="272,392,296,416" href="#share_modal_example" title="Go to page 'Share Modal Example'" />
+      <area shape="rect" coords="207,246,301,272" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="38,232,192,386" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="31,233,367,427" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+    </map>
+    <div class="image-header">
+      <h2 id="side_menu_example">Side Menu Example</h2>
+      <p>
+        <div>This menu appears when the user taps the three lines by the application's screen title. It offers extra options to the user. It can be accessed from the Home, Favorites or Shop screen. If a user is not logged in, they will have a login option
+          here.
+          <br />
+          <br />
+          <br />
+        </div>
+      </p>
+    </div><img width="400" height="800" src="pages/side_menu_example.png" usemap="#map_side_menu_example" class="img-responsive" />
+    <hr />
+    <map name="map_side_menu_example">
+      <area shape="rect" coords="72,397,159,433" href="#favorites_screen" title="Go to page 'Favorites Screen'" />
+      <area shape="rect" coords="22,180,222,664" href="#home_screen" title="Go to page 'Home Screen'" />
+      <area shape="rect" coords="22,69,222,664" href="#home_screen" title="Go to page 'Home Screen'" />
+      <area shape="rect" coords="264,146,380,192" href="#shop_screen" title="Go to page 'Shop Screen'" />
+      <area shape="rect" coords="141,144,257,190" href="#favorites_screen" title="Go to page 'Favorites Screen'" />
+      <area shape="rect" coords="207,454,301,480" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="45,451,199,605" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="32,442,368,636" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="207,246,301,272" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="38,232,192,386" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="31,233,367,427" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+    </map>
+    <div class="image-header">
+      <h2 id="share_modal_example">Share Modal Example</h2>
+      <p>
+        <div>The user will see this whenever they tap on Share. The modal dialog will appear and the previously active screen will be slightly grayed out indicating the dialog must be dismissed before returning to the main screen.
+          <br />
+        </div>
+      </p>
+    </div><img width="400" height="800" src="pages/share_modal_example.png" usemap="#map_share_modal_example" class="img-responsive" />
+    <hr />
+    <map name="map_share_modal_example">
+      <area shape="rect" coords="39,505,121,529" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="16,69,380,440" href="#home_screen" title="Go to page 'Home Screen'" />
+      <area shape="rect" coords="264,146,380,192" href="#shop_screen" title="Go to page 'Shop Screen'" />
+      <area shape="rect" coords="141,144,257,190" href="#favorites_screen" title="Go to page 'Favorites Screen'" />
+      <area shape="rect" coords="207,454,301,480" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="45,451,199,605" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="32,442,368,636" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="207,246,301,272" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="38,232,192,386" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="31,233,367,427" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+    </map>
+    <div class="image-header">
+      <h2 id="favorites_screen">Favorites Screen</h2>
+      <p>
+        <div>Here the user can look at favorite series and episodes. The three dot drop down bar next to each Series title and Episode title will allow users to share their selection on social networks, remove from favorites, and see related products.
+          <br />
+        </div>
+      </p>
+    </div><img width="400" height="800" src="pages/favorites_screen.png" usemap="#map_favorites_screen" class="img-responsive" />
+    <hr />
+    <map name="map_favorites_screen">
+      <area shape="rect" coords="308,88,404,124" href="#shopping_cart_screen" title="Go to page 'Shopping Cart Screen'" />
+      <area shape="rect" coords="344,112,368,136" href="#shopping_cart_screen" title="Go to page 'Shopping Cart Screen'" />
+      <area shape="rect" coords="32,112,56,136" href="#side_menu_example" title="Go to page 'Side Menu Example'" />
+      <area shape="rect" coords="274,144,380,190" href="#shop_screen" title="Go to page 'Shop Screen'" />
+      <area shape="rect" coords="20,145,136,191" href="#home_screen" title="Go to page 'Home Screen'" />
+      <area shape="rect" coords="57,492,166,601" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="227,492,336,601" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="57,263,166,372" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="227,263,336,372" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="339,619,363,643" href="#favorites_menu_example" title="Go to page 'Favorites Menu Example'" />
+      <area shape="rect" coords="235,621,325,645" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="202,479,369,614" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="165,620,189,644" href="#favorites_menu_example" title="Go to page 'Favorites Menu Example'" />
+      <area shape="rect" coords="63,623,153,647" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="28,479,195,614" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="339,390,363,414" href="#favorites_menu_example" title="Go to page 'Favorites Menu Example'" />
+      <area shape="rect" coords="241,391,318,415" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="202,250,369,385" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="164,390,188,414" href="#favorites_menu_example" title="Go to page 'Favorites Menu Example'" />
+      <area shape="rect" coords="71,391,148,415" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="28,249,195,384" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+    </map>
+    <div class="image-header">
+      <h2 id="favorites_menu_example">Favorites Menu Example</h2>
+      <p>
+        <div>Here is the menu that appears when the user clicks the three dots by Series title or Episode title.
+          <br />
+          <br />
+        </div>
+      </p>
+    </div><img width="400" height="800" src="pages/favorites_menu_example.png" usemap="#map_favorites_menu_example" class="img-responsive" />
+    <hr />
+    <map name="map_favorites_menu_example">
+      <area shape="rect" coords="184,480,344,526" href="#favorites_screen" title="Go to page 'Favorites Screen'" />
+      <area shape="rect" coords="176,555,336,601" href="#shop_screen" title="Go to page 'Shop Screen'" />
+      <area shape="rect" coords="176,410,336,456" href="#share_modal_example" title="Go to page 'Share Modal Example'" />
+      <area shape="rect" coords="308,88,404,124" href="#shopping_cart_screen" title="Go to page 'Shopping Cart Screen'" />
+      <area shape="rect" coords="344,112,368,136" href="#shopping_cart_screen" title="Go to page 'Shopping Cart Screen'" />
+      <area shape="rect" coords="32,112,56,136" href="#side_menu_example" title="Go to page 'Side Menu Example'" />
+      <area shape="rect" coords="274,144,380,190" href="#shop_screen" title="Go to page 'Shop Screen'" />
+      <area shape="rect" coords="20,144,136,190" href="#home_screen" title="Go to page 'Home Screen'" />
+      <area shape="rect" coords="57,492,166,601" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="227,492,336,601" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="57,263,166,372" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="227,263,336,372" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="235,622,325,646" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="202,479,369,614" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="63,623,153,647" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="28,479,195,614" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="241,391,318,415" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="202,250,369,385" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="71,391,148,415" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="28,249,195,384" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="20,145,380,674" href="#favorites_screen" title="Go to page 'Favorites Screen'" />
+    </map>
+    <div class="image-header">
+      <h2 id="shop_screen">Shop Screen</h2>
+      <p>
+        <div>The Shop screen is an easy way to find products related to series/episodes users have watched. When the user taps on an item, they are taken to the item screen for more information.
+          <br />
+        </div>
+      </p>
+    </div><img width="400" height="800" src="pages/shop_screen.png" usemap="#map_shop_screen" class="img-responsive" />
+    <hr />
+    <map name="map_shop_screen">
+      <area shape="rect" coords="32,112,56,136" href="#side_menu_example" title="Go to page 'Side Menu Example'" />
+      <area shape="rect" coords="308,88,404,124" href="#shopping_cart_screen" title="Go to page 'Shopping Cart Screen'" />
+      <area shape="rect" coords="32,144,148,190" href="#home_screen" title="Go to page 'Home Screen'" />
+      <area shape="rect" coords="141,144,257,190" href="#favorites_screen" title="Go to page 'Favorites Screen'" />
+      <area shape="rect" coords="215,254,312,282" href="#item_details_screen" title="Go to page 'Item Details Screen'" />
+      <area shape="rect" coords="199,631,296,659" href="#item_details_screen" title="Go to page 'Item Details Screen'" />
+      <area shape="rect" coords="207,503,304,531" href="#item_details_screen" title="Go to page 'Item Details Screen'" />
+      <area shape="rect" coords="211,383,308,411" href="#item_details_screen" title="Go to page 'Item Details Screen'" />
+      <area shape="rect" coords="35,248,366,664" href="#item_details_screen" title="Go to page 'Item Details Screen'" />
+    </map>
+    <div class="image-header">
+      <h2 id="episodes_list_screen">Episodes List Screen</h2>
+      <p>
+        <div>On the episode screen a user can see the latest episode and other episodes. User can filter episodes by season or date. When the user taps on the specific episode, they are taken to the watch screen. Users can share the series or favorite it.
+          <br
+          />
+        </div>
+      </p>
+    </div><img width="400" height="800" src="pages/episodes_list_screen.png" usemap="#map_episodes_list_screen" class="img-responsive" />
+    <hr />
+    <map name="map_episodes_list_screen">
+      <area shape="rect" coords="136,256,232,292" href="#share_modal_example" title="Go to page 'Share Modal Example'" />
+      <area shape="rect" coords="48,258,144,294" href="#favorites_screen" title="Go to page 'Favorites Screen'" />
+      <area shape="rect" coords="267,185,318,236" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="240,248,348,272" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="224,144,365,285" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="277,538,345,606" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="260,530,365,634" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="166,537,234,605" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="149,529,254,633" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="55,537,123,605" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="38,529,143,633" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="277,428,345,496" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="260,420,365,524" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="166,427,234,495" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="149,419,254,523" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="55,427,123,495" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="38,419,143,523" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="277,319,345,387" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="260,311,365,415" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="166,318,234,386" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="149,310,254,414" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="55,318,123,386" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="38,310,143,414" href="#watch_episode_screen" title="Go to page 'Watch Episode Screen'" />
+      <area shape="rect" coords="48,113,72,137" href="#home_screen" title="Go to page 'Home Screen'" />
+    </map>
+    <div class="image-header">
+      <h2 id="watch_episode_screen">Watch Episode Screen</h2>
+      <p>
+        <div>On the Watch screen users watch the episode they previously selected. They can enlarge the video to fit full screen with the square icon in the bottom right. Users can favorite or share the episode they are watching. Products related to the series
+          (along with an optional company logo) are displayed underneath. Series a user may be interested in are displayed too. A user can also view or comment (when logged in) on the episode they watched.
+          <br />
+        </div>
+      </p>
+    </div><img width="400" height="800" src="pages/watch_episode_screen.png" usemap="#map_watch_episode_screen" class="img-responsive" />
+    <hr />
+    <map name="map_watch_episode_screen">
+      <area shape="rect" coords="35,109,61,135" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="160,311,256,347" href="#favorites_screen" title="Go to page 'Favorites Screen'" />
+      <area shape="rect" coords="264,312,360,348" href="#share_modal_example" title="Go to page 'Share Modal Example'" />
+      <area shape="rect" coords="283,377,351,445" href="#item_details_screen" title="Go to page 'Item Details Screen'" />
+      <area shape="rect" coords="173,378,241,446" href="#item_details_screen" title="Go to page 'Item Details Screen'" />
+      <area shape="rect" coords="281,505,349,573" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="171,505,239,573" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+      <area shape="rect" coords="56,505,124,573" href="#episodes_list_screen" title="Go to page 'Episodes List Screen'" />
+    </map>
+    <div class="image-header">
+      <h2 id="item_details_screen">Item Details Screen</h2>
+      <p>
+        <div>The user can add the item to cart on this screen. They can read the description of the item, more information about the organization behind the item being sold, related products, related series, and product reviews. The user can also share the
+          items on social media.
+          <br />
+        </div>
+      </p>
+    </div><img width="400" height="800" src="pages/item_details_screen.png" usemap="#map_item_details_screen" class="img-responsive" />
+    <hr />
+    <map name="map_item_details_screen">
+      <area shape="rect" coords="200,305,376,353" href="#shopping_cart_screen" title="Go to page 'Shopping Cart Screen'" />
+      <area shape="rect" coords="294,88,390,124" href="#shopping_cart_screen" title="Go to page 'Shopping Cart Screen'" />
+      <area shape="rect" coords="328,113,356,141" href="#shopping_cart_screen" title="Go to page 'Shopping Cart Screen'" />
+      <area shape="rect" coords="84,322,149,358" href="#share_modal_example" title="Go to page 'Share Modal Example'" />
+      <area shape="rect" coords="48,113,72,137" href="#shop_screen" title="Go to page 'Shop Screen'" />
+      <area shape="rect" coords="70,328,94,352" href="#share_modal_example" title="Go to page 'Share Modal Example'" />
+    </map>
+    <div class="image-header">
+      <h2 id="shopping_cart_screen">Shopping Cart Screen</h2>
+      <p>
+        <div>Here is the shopping cart screen. The user can decide to checkout with the app or use paypal to checkout.
+          <br />
+        </div>
+      </p>
+    </div><img width="400" height="800" src="pages/shopping_cart_screen.png" usemap="#map_shopping_cart_screen" class="img-responsive" />
+    <hr />
+    <map name="map_shopping_cart_screen">
+      <area shape="rect" coords="48,521,352,577" href="#place_order_screen" title="Go to page 'Place Order Screen'" />
+      <area shape="rect" coords="48,113,72,137" href="#item_details_screen" title="Go to page 'Item Details Screen'" />
+    </map>
+    <div class="image-header">
+      <h2 id="place_order_screen">Place Order Screen</h2>
+      <p>
+        <div>Here is the Place Order screen for a logged in user. The application remembers past addresses and credit cards. If the user is not logged in then this screen would prompt the user for the address and credit card information.
+          <br />
+          <br />
+        </div>
+      </p>
+    </div><img width="400" height="800" src="pages/place_order_screen.png" usemap="#map_place_order_screen" class="img-responsive" />
+    <hr />
+    <map name="map_place_order_screen">
+      <area shape="rect" coords="48,113,72,137" href="#shopping_cart_screen" title="Go to page 'Shopping Cart Screen'" />
+    </map>
+    <footer><small><p><span class="file-name">ViMo.ep</span><br />Wed Mar 02 2016 20:25:34 GMT-0500 (EST)</p></small></footer>
+  </div>
+  <script src="static/js/jquery-1.11.1.min.js"></script>
+  <script src="static/js/bootstrap.min.js"></script>
+</body>
+
+</html>
