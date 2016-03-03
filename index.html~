@@ -327,6 +327,7 @@
     <map name="map_place_order_screen">
       <area shape="rect" coords="48,113,72,137" href="#shopping_cart_screen" title="Go to page 'Shopping Cart Screen'" />
     </map>
+    <footer><small><p><span class="file-name">ViMo.ep</span><br />Wed Mar 02 2016 20:25:34 GMT-0500 (EST)</p></small></footer>
   </div>
   <script src="static/js/jquery-1.11.1.min.js"></script>
   <script src="static/js/bootstrap.min.js"></script>
